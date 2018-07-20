@@ -11,6 +11,6 @@
 #' @import ggplot2
 #' @importFrom mice mice
 #' @importFrom VIM aggr
-#' @import phenix
+#' @import PHENIX
 #' @import corrplot
 NULL
