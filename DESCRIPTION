@@ -8,7 +8,7 @@ Description: Collection of function from R packages for imputation, missing data
     workflow for imputing phenotypes, choice of imputation method and 
     visualisation of missingness patterns and imputation quality. 
 Depends: 
-    R (>= 3.5.0)
+    R (>= 3.4.0)
 Imports:
     data.table (>= 1.11.0),
     VIM,
