@@ -10,7 +10,7 @@ Description: Collection of function from R packages for imputation, missing data
 Depends: 
     R (>= 3.4.0)
 Imports:
-    data.table (>= 1.11.0),
+    data.table (>= 1.10.4),
     VIM,
     Hmisc,
     corrplot,
