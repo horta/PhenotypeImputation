@@ -2,7 +2,7 @@
 
 import(corrplot)
 import(ggplot2)
-import(PHENIX)
+import(phenix)
 importFrom(BaylorEdPsych,LittleMCAR)
 importFrom(Hmisc,rcorr)
 importFrom(VIM,aggr)
