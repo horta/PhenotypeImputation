@@ -98,10 +98,10 @@ mice_impute <- function(data, fulldata, seed=500, testing=FALSE, verbose=FALSE,
     
     if (is.null(predictors)) {
         if(verbose) message("Generating predictor matrices")
-        corr_info <- list(corr_info0.0=quickpred(data, mincor=0.0, minpuc=0.2),
-                          corr_info0.1=quickpred(data, mincor=0.1, minpuc=0.2),
-                          corr_info0.2=quickpred(data, mincor=0.2, minpuc=0.2),
-                          corr_info0.3=quickpred(data,mincor=0.3, minpuc=0.2))
+        corr_info <- list(corr_info0.0=mice::quickpred(data, mincor=0.0, minpuc=0.2),
+                          corr_info0.1=mice::quickpred(data, mincor=0.1, minpuc=0.2),
+                          corr_info0.2=mice::quickpred(data, mincor=0.2, minpuc=0.2),
+                          corr_info0.3=mice::quickpred(data,mincor=0.3, minpuc=0.2))
         
         ## b) impute with different predictor matrix schemes
         if(verbose) message("Imputation with all traits as predictors")
