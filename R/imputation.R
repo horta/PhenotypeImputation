@@ -530,7 +530,7 @@ phenix_vb <- function (Y, Q, lam_K, N = nrow(Y), P = ncol(Y), M = min(c(N,
     svd.Omega_beta <- svd.Omega
     counter <- 1
     lik.path <- zero.path <- numeric()
-    lik.path[counter] <- lik <- phenix_likelihood(Y, Q, lam_K, 
+    lik.path[counter] <- lik <- phenix::phenix_likelihood(Y, Q, lam_K, 
                                                   N, P, M, tau, E.inv, mu_Y, Sigma_Y, Omega, mu_beta, mu_S, 
                                                   eprime, svd.Omega, svd.V_S, svd.V_beta, svd.Omega_beta, 
                                                   j2miss, j2len, n.miss.types)
@@ -593,7 +593,7 @@ phenix_vb <- function (Y, Q, lam_K, N = nrow(Y), P = ncol(Y), M = min(c(N,
         }
         counter <- counter + 1
         oldlik <- lik
-        lik.path[counter] <- lik <- phenix_likelihood(Y, Q, lam_K, 
+        lik.path[counter] <- lik <- phenix::phenix_likelihood(Y, Q, lam_K, 
                                                       N, P, M, tau, E.inv, mu_Y, Sigma_Y, Omega, mu_beta, 
                                                       mu_S, eprime, svd.Omega, svd.V_S, svd.V_beta, svd.Omega_beta, 
                                                       j2miss, j2len, n.miss.types)
